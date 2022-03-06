@@ -14,8 +14,8 @@
             <div class="quiz-playground not-active" id="playground">
                 <div class="important-note">
                     DISCLAIMER: USE LOWER CASE ONLY
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7c3-Gei5j4w?autoplay=1&mute=1?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                 </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7c3-Gei5j4w?autoplay=1&mute=1?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                 <div class="question-card active first-ques-bg" id="ques-1">
                     <div>Who is your partner in crime?</div>
                     <div class="hint-text">hint: what's my pet name that our family knows was given by bua to me</div>
@@ -32,7 +32,7 @@
                     <input type="text" id="text-2"/>
                     <button type="button" onclick="secondQues()" id="are">are</button>
                     <div><span>Your answer:</span> <span id="ans-2"> </span></div>
-                   
+                    
                 </div>
 
                 <div class="question-card not-active" id="ques-3">
@@ -41,7 +41,7 @@
                     <input type="text" id="text-3"/>
                     <button type="button" onclick="thirdQues()" id="beautiful">beautiful</button>
                     <div><span>Your answer:</span> <span id="ans-3"> </span></div>
-                    
+                   
                 </div>
 
                 <div class="question-card not-active" id="ques-4">
@@ -70,7 +70,7 @@
                     <input type="text" id="text-6-1"/>
                     <button type="button" onclick="sixthQues()" id="Very">Very</button>
                     <div><span>Your answer:</span> <span id="ans-6"> </span></div>
-                    
+                   
                 </div>
 
                 <div class="question-card not-active" id="ques-7">
@@ -88,7 +88,7 @@
                     <input type="text" id="text-8"/>
                     <button type="button" onclick="eighthQues()" id="Happy">Happy</button>
                     <div><span>Your answer:</span> <span id="ans-8"> </span></div>
-                    
+                   
                 </div>
 
                 <div class="question-card not-active" id="ques-9">
@@ -97,7 +97,7 @@
                     <input type="text" id="text-9"/>
                     <button type="button" onclick="nineQues()" id="Birthday">Birthday!!!</button>
                     <div><span>Your answer:</span> <span id="ans-9"> </span></div>
-                   
+                    
                 </div>
 
                 <div class="question-card not-active" id="ques-10">
@@ -142,6 +142,7 @@
     document.getElementById("you").disabled = true;
     if(getText == 'raja') {
         score = score + 10;
+       
 
     }
     document.getElementById("score").innerHTML = score
@@ -157,6 +158,7 @@
     document.getElementById("are").disabled = true;
     if(getText == 'techlet' || getText == 'tech let') {
         score = score + 10;
+       
     }
     document.getElementById("score").innerHTML = score
     let ele = document.getElementById("ques-3")
@@ -242,7 +244,7 @@
     document.getElementById("Happy").disabled = true;
     if(getText == 'burger') {
         score = score + 10;
-       
+        
     }
     document.getElementById("score").innerHTML = score
     let ele = document.getElementById("ques-9")
@@ -270,7 +272,7 @@
     document.getElementById("Swag").disabled = true
     if(getText == 'raja' || getText == 'baibhav' || getText == 'you') {
         score = score + 10;
-        
+       
     }
     document.getElementById("score").innerHTML = score
     let ele = document.getElementById("ques-11")
